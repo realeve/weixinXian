@@ -167,7 +167,7 @@
 			return Math.ceil(Math.random() * i);
 		}
 		var bgmid = randomID(6);
-		$('#autoplay').attr('src', 'http://cbpc540.applinzi.com/topic/exam/assets/audio/bgm' + bgmid + '.mp3');
+		$('#autoplay').attr('src', '//cbpc540.applinzi.com/topic/exam/assets/audio/bgm' + bgmid + '.mp3');
 		var audio = document.getElementById('autoplay');
 		var controller = document.getElementById('musicBtn');
 		var controllerHint = document.getElementById('musicBtnTxt');
@@ -15243,7 +15243,7 @@
 				getPaper();
 			} else {
 				$.ajax({
-					url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getMyErrs&sportid=' + sid + '&uid=' + uid,
+					url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getMyErrs&sportid=' + sid + '&uid=' + uid,
 					async: false,
 					dataType: "jsonp",
 					callback: "JsonCallback"

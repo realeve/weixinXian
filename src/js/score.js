@@ -48,7 +48,7 @@ var setSportDpt = function() {
 function getScoreOrder() {
 	//载入首页信息完毕，准备第二页信息
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreOrder&score=' + gb.userInfo.score,
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreOrder&score=' + gb.userInfo.score,
 		data: {
 			sportid: gb.sportid
 		},
@@ -75,7 +75,7 @@ function getScoreOrder() {
 function getScoreOrderByDpt() {
 	//载入首页信息完毕，准备第二页信息
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreOrderByDpt&score=' + gb.userInfo.score + "&dpt=" + gb.userInfo.user_dpt,
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreOrderByDpt&score=' + gb.userInfo.score + "&dpt=" + gb.userInfo.user_dpt,
 
 		data: {
 			sportid: gb.sportid
@@ -167,7 +167,7 @@ function getScoreRangeOption(obj, option) {
 function getTimeLength() {
 
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getTimeLength',
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getTimeLength',
 		data: {
 			dpt: gb.userInfo.user_dpt,
 			sportid: gb.sportid
@@ -195,7 +195,7 @@ function getTimeLength() {
 //活动参与度
 function getAnsweredRatio() {
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getAnsweredRatio',
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getAnsweredRatio',
 		data: {
 			sportid: gb.sportid
 		},
@@ -224,7 +224,7 @@ function getAnsweredRatio() {
 //得分对比
 function getScoreCompare() {
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreCompare',
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreCompare',
 		data: {
 			sportid: gb.sportid
 		},
@@ -247,7 +247,7 @@ function getScoreCompare() {
 //获奖对比
 function getPrizeCompare() {
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getPrizeCompare',
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getPrizeCompare',
 		data: {
 			sportid: gb.sportid
 		},
@@ -269,7 +269,7 @@ function getPrizeCompare() {
 //获奖对比
 function get2ndPassedCompare() {
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedRatio',
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedRatio',
 		data: {
 			sportid: gb.sportid
 		},
@@ -283,7 +283,7 @@ function get2ndPassedCompare() {
 		$('[name="1stTime"]').text(obj.moreChance);
 
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedCompare',
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedCompare',
 			data: {
 				sportid: gb.sportid
 			},
@@ -303,7 +303,7 @@ function get2ndPassedCompare() {
 
 function getScoreRangeByDpt() {
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreRangeByDpt&dpt=' + gb.userInfo.user_dpt,
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreRangeByDpt&dpt=' + gb.userInfo.user_dpt,
 
 		data: {
 			sportid: gb.sportid
@@ -328,7 +328,7 @@ function getScoreRangeByDpt() {
 function getScoreRange() {
 
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreRange',
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreRange',
 		data: {
 			sportid: gb.sportid
 		},
@@ -792,7 +792,7 @@ var initDom = function() {
 
 var refreshData = function() {
 	$.ajax({
-		url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getSafeExamData&uid=' + uid,
+		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getSafeExamData&uid=' + uid,
 		data: {
 			sportid: gb.sportid
 		},

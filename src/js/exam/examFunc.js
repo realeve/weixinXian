@@ -49,7 +49,7 @@ function handleTotalScore(iScore, uid, exam) {
 
 function submitPaper(data, exam) {
 	$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/setSafeExamData',
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/setSafeExamData',
 			data: data,
 			dataType: "jsonp",
 			callback: "JsonCallback",
@@ -329,7 +329,7 @@ module.exports = {
 		}
 		//选项乱序 -END
 
-		str += strQues + '</div><img name="fixed" src="http://cbpc540.applinzi.com/topic/exam/assets/img/main.jpg" class="background_dark answer-title"></div>';
+		str += strQues + '</div><img name="fixed" src="//cbpc540.applinzi.com/topic/exam/assets/img/main.jpg" class="background_dark answer-title"></div>';
 		return str;
 	},
 	getRandomArr: getRandomArr,
@@ -381,7 +381,7 @@ module.exports = {
 			$.toast("请输入个人用户信息", "cancel");
 		} else {
 			$.ajax({
-				url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/examSafeLogin',
+				url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/examSafeLogin',
 				data: data,
 				dataType: "jsonp",
 				callback: "JsonCallback",

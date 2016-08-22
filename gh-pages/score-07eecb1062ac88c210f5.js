@@ -164,7 +164,7 @@
 			return Math.ceil(Math.random() * i);
 		}
 		var bgmid = randomID(6);
-		$('#autoplay').attr('src', 'http://cbpc540.applinzi.com/topic/exam/assets/audio/bgm' + bgmid + '.mp3');
+		$('#autoplay').attr('src', '//cbpc540.applinzi.com/topic/exam/assets/audio/bgm' + bgmid + '.mp3');
 		var audio = document.getElementById('autoplay');
 		var controller = document.getElementById('musicBtn');
 		var controllerHint = document.getElementById('musicBtnTxt');
@@ -3424,7 +3424,7 @@
 	function getScoreOrder() {
 		//载入首页信息完毕，准备第二页信息
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreOrder&score=' + gb.userInfo.score,
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreOrder&score=' + gb.userInfo.score,
 			data: {
 				sportid: gb.sportid
 			},
@@ -3451,7 +3451,7 @@
 	function getScoreOrderByDpt() {
 		//载入首页信息完毕，准备第二页信息
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreOrderByDpt&score=' + gb.userInfo.score + "&dpt=" + gb.userInfo.user_dpt,
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreOrderByDpt&score=' + gb.userInfo.score + "&dpt=" + gb.userInfo.user_dpt,
 
 			data: {
 				sportid: gb.sportid
@@ -3543,7 +3543,7 @@
 	function getTimeLength() {
 
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getTimeLength',
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getTimeLength',
 			data: {
 				dpt: gb.userInfo.user_dpt,
 				sportid: gb.sportid
@@ -3571,7 +3571,7 @@
 	//活动参与度
 	function getAnsweredRatio() {
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getAnsweredRatio',
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getAnsweredRatio',
 			data: {
 				sportid: gb.sportid
 			},
@@ -3600,7 +3600,7 @@
 	//得分对比
 	function getScoreCompare() {
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreCompare',
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreCompare',
 			data: {
 				sportid: gb.sportid
 			},
@@ -3623,7 +3623,7 @@
 	//获奖对比
 	function getPrizeCompare() {
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getPrizeCompare',
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getPrizeCompare',
 			data: {
 				sportid: gb.sportid
 			},
@@ -3645,7 +3645,7 @@
 	//获奖对比
 	function get2ndPassedCompare() {
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedRatio',
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedRatio',
 			data: {
 				sportid: gb.sportid
 			},
@@ -3659,7 +3659,7 @@
 			$('[name="1stTime"]').text(obj.moreChance);
 
 			$.ajax({
-				url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedCompare',
+				url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedCompare',
 				data: {
 					sportid: gb.sportid
 				},
@@ -3679,7 +3679,7 @@
 
 	function getScoreRangeByDpt() {
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreRangeByDpt&dpt=' + gb.userInfo.user_dpt,
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreRangeByDpt&dpt=' + gb.userInfo.user_dpt,
 
 			data: {
 				sportid: gb.sportid
@@ -3704,7 +3704,7 @@
 	function getScoreRange() {
 
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreRange',
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getScoreRange',
 			data: {
 				sportid: gb.sportid
 			},
@@ -4168,7 +4168,7 @@
 
 	var refreshData = function() {
 		$.ajax({
-			url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getSafeExamData&uid=' + uid,
+			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getSafeExamData&uid=' + uid,
 			data: {
 				sportid: gb.sportid
 			},

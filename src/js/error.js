@@ -115,7 +115,7 @@ var app = function() {
 			getPaper();
 		} else {
 			$.ajax({
-				url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getMyErrs&sportid=' + sid + '&uid=' + uid,
+				url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getMyErrs&sportid=' + sid + '&uid=' + uid,
 				async: false,
 				dataType: "jsonp",
 				callback: "JsonCallback"

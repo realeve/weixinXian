@@ -52,7 +52,7 @@
 	__webpack_require__(13)(__SRC_DIR+"/css/SentyZHAO.css");
 	__webpack_require__(15)(__SRC_DIR+"/css/main.css");
 	__webpack_require__(1)(__SRC_DIR+"/css/fakeLoader.css");
-	__webpack_require__(33)(__SRC_DIR+"/js/main.js");
+	__webpack_require__(31)(__SRC_DIR+"/js/employee.js");
 	__webpack_require__(4)(__SRC_DIR+"/js/global/bgm.js");
 
 /***/ },
@@ -166,7 +166,7 @@
 			return Math.ceil(Math.random() * i);
 		}
 		var bgmid = randomID(6);
-		$('#autoplay').attr('src', 'http://cbpc540.applinzi.com/topic/exam/assets/audio/bgm' + bgmid + '.mp3');
+		$('#autoplay').attr('src', '//cbpc540.applinzi.com/topic/exam/assets/audio/bgm' + bgmid + '.mp3');
 		var audio = document.getElementById('autoplay');
 		var controller = document.getElementById('musicBtn');
 		var controllerHint = document.getElementById('musicBtnTxt');
@@ -9617,11 +9617,254 @@
 
 
 /***/ },
-/* 22 */,
-/* 23 */
+/* 22 */
 /***/ function(module, exports) {
 
 	module.exports = [
+		{
+			"title": "中国人民银行各分支机构和中国人民银行授权的鉴定机构鉴定货币真伪时，应当至少有_______名鉴定人员同时参加，并作出鉴定结论。",
+			"question": [
+				"1",
+				"2",
+				"3",
+				"4"
+			],
+			"answer": 2
+		},
+		{
+			"title": "根据《公安部、中国人民银行关于进一步加强反假币工作的通知》（公通字〔2009〕43号）文件要求，金融机构应该_______向人民银行解缴移送临柜收缴的假币。",
+			"question": [
+				"按季度",
+				"按月",
+				"按旬",
+				"按年"
+			],
+			"answer": 2
+		},
+		{
+			"title": "《假人民币没收收据》一式_______联。",
+			"question": [
+				"一",
+				"二",
+				"三",
+				"四"
+			],
+			"answer": 3
+		},
+		{
+			"title": "&quot;假币&quot;印章采用_______油墨。",
+			"question": [
+				"蓝色",
+				"红色",
+				"黑色",
+				"白色"
+			],
+			"answer": 1
+		},
+		{
+			"title": "&quot;假币&quot;印章应加盖在_______上。",
+			"question": [
+				"假币实物",
+				"假币收缴凭证",
+				"假币实物或假币收缴专用袋",
+				"假币没收收据"
+			],
+			"answer": 3
+		},
+		{
+			"title": "&quot;假币&quot;印章应盖在假币背面的_______位置。",
+			"question": [
+				"背面中间",
+				"背面安全线",
+				"背面左侧",
+				"背面右侧"
+			],
+			"answer": 1
+		},
+		{
+			"title": "假币专用封装袋的规格为_______。",
+			"question": [
+				"22cm(长)x14cm（宽）",
+				"25cm(长)x14、5cm（宽）",
+				"20cm(长)x15、5cm（宽）",
+				"25cm(长)x15、5cm（宽）"
+			],
+			"answer": 1
+		},
+		{
+			"title": "_______不是假币收缴凭证需填写的项目。",
+			"question": [
+				"券别",
+				"持有人联系电话",
+				"版别",
+				"持有人证件编号"
+			],
+			"answer": 2
+		},
+		{
+			"title": "每张《假币收缴凭证》最多可以填写_______个不同的冠字号码。",
+			"question": [
+				"1",
+				"2",
+				"5",
+				"8"
+			],
+			"answer": 3
+		},
+		{
+			"title": "各商业银行要对使用的现钞处理设备的鉴伪能力定期进行技术升级，一般每年不少于______次。",
+			"question": [
+				"1",
+				"2",
+				"3",
+				"5"
+			],
+			"answer": 2
+		},
+		{
+			"title": "《人民币鉴别仪通用技术条件》（GB-16999-2010）中定义的验钞仪是按_______鉴别方式进行纸币鉴别的仪器。",
+			"question": [
+				"动态",
+				"静态",
+				"动态和静态相结合",
+				"其他"
+			],
+			"answer": 2
+		},
+		{
+			"title": "《人民币鉴别仪通用技术条件》（GB-16999-2010）将点验钞机按采用防伪技术的鉴别能力和相应的评测结果分为如下几个等级_______。",
+			"question": [
+				"A级、B级和C级",
+				"1级、2级和3级",
+				"I级、II级和III级"
+			],
+			"answer": 1
+		},
+		{
+			"title": "根据《人民币鉴别仪通用技术条件》(GB_16999-2010)，鉴别仪使用寿命一般为________年。",
+			"question": [
+				"1",
+				"2",
+				"3",
+				"4"
+			],
+			"answer": 3
+		},
+		{
+			"title": "《人民币鉴别仪通用技术条件》(GB_16999-2010)中定义的B级点验钞机要求使用大于等于_______种鉴别技术。",
+			"question": [
+				"12",
+				"9",
+				"5",
+				"4"
+			],
+			"answer": 3
+		},
+		{
+			"title": "《人民币鉴别仪通用技术条件》(GB_16999-2010)于_______年发布。",
+			"question": [
+				"2011",
+				"2012",
+				"2010",
+				"2013"
+			],
+			"answer": 3
+		},
+		{
+			"title": "现金清分包括_______和手工清分",
+			"question": [
+				"设备清分",
+				"点钞机清分",
+				"机械清分"
+			],
+			"answer": 3
+		},
+		{
+			"title": "《中国人民银行办公厅关于银行业金融机构对外误付假币专项治理工作指导意见》（银办发〔2013〕14号）中要求银行业金融机构采集到的冠字号码数据信息保存时间是_______。",
+			"question": [
+				"至少保存3个月",
+				"至少保存6个月",
+				"至少保存1个月",
+				"至少保存12个月"
+			],
+			"answer": 1
+		},
+		{
+			"title": "金融机构现金管理部门应于每月____日前将本行清分中心发现的假币集中整理，解缴到当地人民银行中心支行。",
+			"question": [
+				"5",
+				"15",
+				"30",
+				"10"
+			],
+			"answer": 2
+		},
+		{
+			"title": "假币专用封装袋的材质为_______。",
+			"question": [
+				"厚牛皮纸",
+				"白色信封",
+				"票据交换专用信封"
+			],
+			"answer": 1
+		},
+		{
+			"title": "中国人民银行分支机构和中国人民银行授权的鉴定机构在提供货币真伪鉴定服务时，费用_______。",
+			"question": [
+				"收取被鉴定货币总额的1%的手续费",
+				"每鉴定一次收取手续费5元",
+				"免费"
+			],
+			"answer": 3
+		},
+		{
+			"title": "_____元及以上面额必须全额机械清分。",
+			"question": [
+				"5",
+				"10",
+				"20"
+			],
+			"answer": 2
+		},
+		{
+			"title": "银行业金融机构和涉假冠字号码查询申请者_______委托第三方代理查询。",
+			"question": [
+				"可以",
+				"不可以",
+				"必须经人民银行批准后才可以",
+				"必须经查询单位同意后才可以"
+			],
+			"answer": 1
+		},
+		{
+			"title": "冠字号码查询分类贴标工作中， 自动柜员机通过冠字号码查询系统(软件)， 无法在假币纠纷中一一对应地向客户提供取出现钞的冠字号码， 但可提供业务发生当天(或时段) 该设备内各钞箱所有现钞的冠字号码(文本及图像信息)， 应张贴_______。",
+			"question": [
+				"黄标",
+				"红标",
+				"蓝标"
+			],
+			"answer": 1
+		},
+		{
+			"title": "《公安部、 中国人民银行关于进一步加强反假币工作的通知》（ 公通字〔 2009〕 43 号） 中要求： 金融机构一次性发现假人民币面额_______， 应当立即通报公安机关。",
+			"question": [
+				"200 元（ 含） 以上的",
+				"400 元（ 含） 以上的",
+				"500 元（ 含） 以上的",
+				"1000 元（ 含） 以上的"
+			],
+			"answer": 3
+		},
+		{
+			"title": "假币样张借用期限不得超过_______个工作日。",
+			"question": [
+				"7",
+				"10",
+				"15",
+				"30"
+			],
+			"answer": 4
+		},
 		{
 			"title": "中国人民银行是中华人民共和国的_______。",
 			"question": [
@@ -9632,11 +9875,21 @@
 			"answer": 1
 		},
 		{
-			"title": "人民币的单位为_______，人民币辅币单位为_______。",
+			"title": "流通中现金一般用_______表示。",
 			"question": [
-				"元，角分",
-				"分，角元",
-				"角，元分"
+				"M0",
+				"M1",
+				"M2",
+				"M3"
+			],
+			"answer": 1
+		},
+		{
+			"title": "第五套2005年版人民币发行采用_______原则。",
+			"question": [
+				"一次公告， 分次发行， 新旧版混合通用， 逐步回收旧版",
+				"一次公告， 一次发行， 新旧版混合通用， 逐步回收旧版",
+				"多次发行， 分次发行， 新旧版混合通用， 逐步回收旧版"
 			],
 			"answer": 1
 		},
@@ -9652,21 +9905,31 @@
 		{
 			"title": "第五套人民币2005年版公告发行时间是_______。",
 			"question": [
-				"2005年9月1日",
-				"2005年8月31日",
-				"2005年10月1日"
+				"2005 年9月1日",
+				"2005 年8月31日",
+				"2005 年10月1日"
 			],
 			"answer": 2
 		},
 		{
 			"title": "中国人民银行成立于_______。",
 			"question": [
-				"1947年",
-				"1948年",
-				"1949年",
-				"1950年"
+				"1947 年",
+				"1948 年",
+				"1949 年",
+				"1950 年"
 			],
 			"answer": 2
+		},
+		{
+			"title": "中国人民银行是中国的中央银行， 下列选项不属于央行性质的是_______。",
+			"question": [
+				"发行的银行",
+				"政府的银行",
+				"银行的银行",
+				"公众的银行"
+			],
+			"answer": 4
 		},
 		{
 			"title": "人民币的简写符号是_______。",
@@ -9688,30 +9951,11 @@
 			"answer": 3
 		},
 		{
-			"title": "银行业金融机构反假货币联络会议是国务院反假货币工作联席会议的延伸,在_______指导下开展工作。",
+			"title": "为完善币制， 满足市场货币流通的需要， 第五套人民币1999年版在第四套人民币的基础上， 新增加了_______面额纸币。",
 			"question": [
-				"国务院反假货币工作联席会议",
-				"中国人民银行",
-				"国务院"
-			],
-			"answer": 1
-		},
-		{
-			"title": "第五套人民币中的手感线是_______防伪特征。",
-			"question": [
-				"公众",
-				"专业",
-				"专家",
-				"以上均是"
-			],
-			"answer": 1
-		},
-		{
-			"title": "为完善币制，满足市场货币流通的需要，第五套人民币1999年版在第四套人民币的基础上，新增加了_______面额纸币。",
-			"question": [
-				"5元",
-				"20元",
-				"50元"
+				"5 元",
+				"20 元",
+				"50 元"
 			],
 			"answer": 2
 		},
@@ -9728,25 +9972,15 @@
 		{
 			"title": "从人民币产品到流通中现金需要经过的环节是_______。",
 			"question": [
-				"印钞厂——业务库——发行库——企业和个人",
-				"印钞厂——发行库——业务库——企业和个人",
-				"印钞厂——企业和个人——发行库——业务库",
-				"印钞厂——企业和个人——业务库——发行库"
+				"印钞厂—— 业务库—— 发行库—— 企业和个人",
+				"印钞厂—— 发行库—— 业务库—— 企业和个人",
+				"印钞厂—— 企业和个人—— 发行库—— 业务库",
+				"印钞厂—— 企业和个人—— 业务库—— 发行库"
 			],
 			"answer": 2
 		},
 		{
-			"title": "白水印又称为_______水印。",
-			"question": [
-				"多层次",
-				"多色调",
-				"像素",
-				"高光"
-			],
-			"answer": 4
-		},
-		{
-			"title": "2005版第五套人民币100元的冠字号码是_______。",
+			"title": "2005 版第五套人民币100元的冠字号码是_______。",
 			"question": [
 				"双横号码",
 				"双色异型横号码",
@@ -9756,7 +9990,7 @@
 			"answer": 2
 		},
 		{
-			"title": "1990版第四套人民币100元的无色荧光图文位于_______。",
+			"title": "1990 版第四套人民币100元的无色荧光图文位于_______。",
 			"question": [
 				"正面",
 				"背面",
@@ -9766,42 +10000,12 @@
 			"answer": 1
 		},
 		{
-			"title": "第五套人民币50元纸币的光变面额数字的颜色变化是由_______。",
+			"title": "第五套人民币100元和50元纸币的水印采用的是毛泽东头像， 20 元、 10 元纸币的水印是_______。",
 			"question": [
-				"蓝变金",
-				"金变绿",
-				"绿变蓝",
-				"金变紫"
-			],
-			"answer": 2
-		},
-		{
-			"title": "鉴别人民币纸币的方法之一是&quot;手摸&quot;，2005版第五套人民币100元表面文字及主要图案有凹凸感，这种&quot;凹凸&quot;效果产生于_______印刷方式。",
-			"question": [
-				"普通胶印",
-				"雕刻凹版",
-				"凸版印刷",
-				"丝网印刷"
-			],
-			"answer": 2
-		},
-		{
-			"title": "我国是从第四套人民币_______版的100元、50元纸币上开始使用安全线技术的。",
-			"question": [
-				"1980年",
-				"1984年",
-				"1988年",
-				"1990年"
-			],
-			"answer": 4
-		},
-		{
-			"title": "第五套人民币100元和50元纸币的水印采用的是毛泽东头像，20元、10元纸币的水印是_______。",
-			"question": [
-				"毛泽东头像、荷花",
-				"荷花、月季花",
-				"长江三峡、月季花",
-				"荷花、长江三峡"
+				"毛泽东头像、 荷花",
+				"荷花、 月季花",
+				"长江三峡、 月季花",
+				"荷花、 长江三峡"
 			],
 			"answer": 2
 		},
@@ -9811,26 +10015,6 @@
 				"蓝变金",
 				"金变绿",
 				"绿变蓝"
-			],
-			"answer": 3
-		},
-		{
-			"title": "2005版第五套人民币中的_______具有白水印特征。",
-			"question": [
-				"100元、50元",
-				"100元、50元、20元",
-				"100元、50元、20元、10元",
-				"100元、50元、20元、10元、5元"
-			],
-			"answer": 4
-		},
-		{
-			"title": "第五套人民币各面额纸币上的隐形面额数字在票面的_______。",
-			"question": [
-				"正面左下方",
-				"正面右下方",
-				"正面右上方",
-				"正面左上方"
 			],
 			"answer": 3
 		},
@@ -9845,7 +10029,7 @@
 			"answer": 1
 		},
 		{
-			"title": "1999版第五套人民币纸张中的彩色纤维是由_______纤维组成的。",
+			"title": "1999 版第五套人民币纸张中的彩色纤维是由_______纤维组成的。",
 			"question": [
 				"红色和黄色",
 				"红色和蓝色",
@@ -9853,6 +10037,16 @@
 				"绿色和蓝色"
 			],
 			"answer": 2
+		},
+		{
+			"title": "1999 版第五套人民币50元的竖冠字号码是_______。",
+			"question": [
+				"红色",
+				"黑色",
+				"蓝色",
+				"绿色"
+			],
+			"answer": 1
 		},
 		{
 			"title": "第五套人民币的无色荧光纤维需要在_______光下观察。",
@@ -9885,7 +10079,7 @@
 			"answer": 4
 		},
 		{
-			"title": "第五套人民币100元正面采用了______，具有中国传统历史文化特色和民族特色的纹饰。",
+			"title": "第五套人民币100元正面采用了______， 具有中国传统历史文化特色和民族特色的纹饰。",
 			"question": [
 				"中国的漆器花纹",
 				"少数民族的挑绣花纹",
@@ -9895,128 +10089,31 @@
 			"answer": 1
 		},
 		{
-			"title": "伪造、变造的人民币由_______统一销毁。",
+			"title": "金融机构分支机构应将不加盖假币戳记收缴的范围严格限定于_______收缴。",
 			"question": [
-				"国务院",
-				"中国人民银行",
-				"财政部"
+				"特定网点",
+				"特定金融机构",
+				"金融机构清分中心",
+				"营业中心主管"
 			],
-			"answer": 2
+			"answer": 3
 		},
 		{
-			"title": "凡办理人民币存取款业务的金融机构应_______为公众兑换残缺、污损人民币，不得拒绝兑换。",
+			"title": " &quot;假币&quot;印章的规格为______。",
 			"question": [
-				"无偿",
-				"按面值的5%收取兑换费用",
-				"按面值的10%收取兑换费用"
+				"长75毫米， 宽30毫米",
+				"长75毫米， 宽35毫米",
+				"长80毫米， 宽30毫米",
+				"长80毫米， 宽35毫米"
 			],
 			"answer": 1
 		}
 	];
 
 /***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var timers = __webpack_require__(25);
-
-	var obj = {
-	  _onTimeout: function() {
-	    console.log('Timer ran for: ' + (new Date().getTime() - obj.now) + ' ms');
-	  },
-	  start: function() {
-	    console.log('Timer should run for 100 ms');
-	    this.now = new Date().getTime();
-	    timers.enroll(this, 100);
-	  }
-	};
-
-	obj.start();
-
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(35).nextTick;
-	var apply = Function.prototype.apply;
-	var slice = Array.prototype.slice;
-	var immediateIds = {};
-	var nextImmediateId = 0;
-
-	// DOM APIs, for completeness
-
-	exports.setTimeout = function() {
-	  return new Timeout(apply.call(setTimeout, window, arguments), clearTimeout);
-	};
-	exports.setInterval = function() {
-	  return new Timeout(apply.call(setInterval, window, arguments), clearInterval);
-	};
-	exports.clearTimeout =
-	exports.clearInterval = function(timeout) { timeout.close(); };
-
-	function Timeout(id, clearFn) {
-	  this._id = id;
-	  this._clearFn = clearFn;
-	}
-	Timeout.prototype.unref = Timeout.prototype.ref = function() {};
-	Timeout.prototype.close = function() {
-	  this._clearFn.call(window, this._id);
-	};
-
-	// Does not start the time, just sets up the members needed.
-	exports.enroll = function(item, msecs) {
-	  clearTimeout(item._idleTimeoutId);
-	  item._idleTimeout = msecs;
-	};
-
-	exports.unenroll = function(item) {
-	  clearTimeout(item._idleTimeoutId);
-	  item._idleTimeout = -1;
-	};
-
-	exports._unrefActive = exports.active = function(item) {
-	  clearTimeout(item._idleTimeoutId);
-
-	  var msecs = item._idleTimeout;
-	  if (msecs >= 0) {
-	    item._idleTimeoutId = setTimeout(function onTimeout() {
-	      if (item._onTimeout)
-	        item._onTimeout();
-	    }, msecs);
-	  }
-	};
-
-	// That's not how node.js implements it but the exposed api is the same.
-	exports.setImmediate = typeof setImmediate === "function" ? setImmediate : function(fn) {
-	  var id = nextImmediateId++;
-	  var args = arguments.length < 2 ? false : slice.call(arguments, 1);
-
-	  immediateIds[id] = true;
-
-	  nextTick(function onNextTick() {
-	    if (immediateIds[id]) {
-	      // fn.call() is faster so we optimize for the common use-case
-	      // @see http://jsperf.com/call-apply-segu
-	      if (args) {
-	        fn.apply(null, args);
-	      } else {
-	        fn.call(null);
-	      }
-	      // Prevent ids from leaking
-	      exports.clearImmediate(id);
-	    }
-	  });
-
-	  return id;
-	};
-
-	exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
-	  delete immediateIds[id];
-	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25).setImmediate, __webpack_require__(25).clearImmediate))
-
-/***/ },
+/* 23 */,
+/* 24 */,
+/* 25 */,
 /* 26 */
 /***/ function(module, exports) {
 
@@ -10071,7 +10168,7 @@
 
 	function submitPaper(data, exam) {
 		$.ajax({
-				url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/setSafeExamData',
+				url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/setSafeExamData',
 				data: data,
 				dataType: "jsonp",
 				callback: "JsonCallback",
@@ -10351,7 +10448,7 @@
 			}
 			//选项乱序 -END
 
-			str += strQues + '</div><img name="fixed" src="http://cbpc540.applinzi.com/topic/exam/assets/img/main.jpg" class="background_dark answer-title"></div>';
+			str += strQues + '</div><img name="fixed" src="//cbpc540.applinzi.com/topic/exam/assets/img/main.jpg" class="background_dark answer-title"></div>';
 			return str;
 		},
 		getRandomArr: getRandomArr,
@@ -10403,7 +10500,7 @@
 				$.toast("请输入个人用户信息", "cancel");
 			} else {
 				$.ajax({
-					url: 'http://cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/examSafeLogin',
+					url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/examSafeLogin',
 					data: data,
 					dataType: "jsonp",
 					callback: "JsonCallback",
@@ -43893,16 +43990,11 @@
 /* 28 */,
 /* 29 */,
 /* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./src/js/main.js": 52,
-		"node-libs-browser/node_modules/timers-browserify/example/enroll/js/main.js": 24,
-		"timers-browserify/example/enroll/js/main.js": 24,
-		"webpack/node_modules/node-libs-browser/node_modules/timers-browserify/example/enroll/js/main.js": 24
+		"./src/js/employee.js": 45
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -43915,177 +44007,14 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 33;
+	webpackContext.id = 31;
 
 
 /***/ },
+/* 32 */,
+/* 33 */,
 /* 34 */,
-/* 35 */
-/***/ function(module, exports) {
-
-	// shim for using process in browser
-	var process = module.exports = {};
-
-	// cached from whatever global is present so that test runners that stub it
-	// don't break things.  But we need to wrap it in a try catch in case it is
-	// wrapped in strict mode code which doesn't define any globals.  It's inside a
-	// function because try/catches deoptimize in certain engines.
-
-	var cachedSetTimeout;
-	var cachedClearTimeout;
-
-	(function () {
-	    try {
-	        cachedSetTimeout = setTimeout;
-	    } catch (e) {
-	        cachedSetTimeout = function () {
-	            throw new Error('setTimeout is not defined');
-	        }
-	    }
-	    try {
-	        cachedClearTimeout = clearTimeout;
-	    } catch (e) {
-	        cachedClearTimeout = function () {
-	            throw new Error('clearTimeout is not defined');
-	        }
-	    }
-	} ())
-	function runTimeout(fun) {
-	    if (cachedSetTimeout === setTimeout) {
-	        //normal enviroments in sane situations
-	        return setTimeout(fun, 0);
-	    }
-	    try {
-	        // when when somebody has screwed with setTimeout but no I.E. maddness
-	        return cachedSetTimeout(fun, 0);
-	    } catch(e){
-	        try {
-	            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-	            return cachedSetTimeout.call(null, fun, 0);
-	        } catch(e){
-	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-	            return cachedSetTimeout.call(this, fun, 0);
-	        }
-	    }
-
-
-	}
-	function runClearTimeout(marker) {
-	    if (cachedClearTimeout === clearTimeout) {
-	        //normal enviroments in sane situations
-	        return clearTimeout(marker);
-	    }
-	    try {
-	        // when when somebody has screwed with setTimeout but no I.E. maddness
-	        return cachedClearTimeout(marker);
-	    } catch (e){
-	        try {
-	            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-	            return cachedClearTimeout.call(null, marker);
-	        } catch (e){
-	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-	            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-	            return cachedClearTimeout.call(this, marker);
-	        }
-	    }
-
-
-
-	}
-	var queue = [];
-	var draining = false;
-	var currentQueue;
-	var queueIndex = -1;
-
-	function cleanUpNextTick() {
-	    if (!draining || !currentQueue) {
-	        return;
-	    }
-	    draining = false;
-	    if (currentQueue.length) {
-	        queue = currentQueue.concat(queue);
-	    } else {
-	        queueIndex = -1;
-	    }
-	    if (queue.length) {
-	        drainQueue();
-	    }
-	}
-
-	function drainQueue() {
-	    if (draining) {
-	        return;
-	    }
-	    var timeout = runTimeout(cleanUpNextTick);
-	    draining = true;
-
-	    var len = queue.length;
-	    while(len) {
-	        currentQueue = queue;
-	        queue = [];
-	        while (++queueIndex < len) {
-	            if (currentQueue) {
-	                currentQueue[queueIndex].run();
-	            }
-	        }
-	        queueIndex = -1;
-	        len = queue.length;
-	    }
-	    currentQueue = null;
-	    draining = false;
-	    runClearTimeout(timeout);
-	}
-
-	process.nextTick = function (fun) {
-	    var args = new Array(arguments.length - 1);
-	    if (arguments.length > 1) {
-	        for (var i = 1; i < arguments.length; i++) {
-	            args[i - 1] = arguments[i];
-	        }
-	    }
-	    queue.push(new Item(fun, args));
-	    if (queue.length === 1 && !draining) {
-	        runTimeout(drainQueue);
-	    }
-	};
-
-	// v8 likes predictible objects
-	function Item(fun, array) {
-	    this.fun = fun;
-	    this.array = array;
-	}
-	Item.prototype.run = function () {
-	    this.fun.apply(null, this.array);
-	};
-	process.title = 'browser';
-	process.browser = true;
-	process.env = {};
-	process.argv = [];
-	process.version = ''; // empty string to avoid regexp issues
-	process.versions = {};
-
-	function noop() {}
-
-	process.on = noop;
-	process.addListener = noop;
-	process.once = noop;
-	process.off = noop;
-	process.removeListener = noop;
-	process.removeAllListeners = noop;
-	process.emit = noop;
-
-	process.binding = function (name) {
-	    throw new Error('process.binding is not supported');
-	};
-
-	process.cwd = function () { return '/' };
-	process.chdir = function (dir) {
-	    throw new Error('process.chdir is not supported');
-	};
-	process.umask = function() { return 0; };
-
-
-/***/ },
+/* 35 */,
 /* 36 */,
 /* 37 */,
 /* 38 */,
@@ -44095,14 +44024,7 @@
 /* 42 */,
 /* 43 */,
 /* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//公共资源
@@ -44179,7 +44101,7 @@
 		};
 
 		function getPaper() {
-			var question = __webpack_require__(23);
+			var question = __webpack_require__(22);
 			var quesLen = question.length;
 
 			//管三活动，仅前200道题目参与问答
