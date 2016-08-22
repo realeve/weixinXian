@@ -240,66 +240,68 @@ function getScoreCompare() {
 		$('[name="highestScore"]').text(obj[0].dpt);
 		$('[name="highestScorePrpt"]').text(obj[0].score);
 		//getPrizeCompare();
-		get2ndPassedCompare();
+		//get2ndPassedCompare();
+		getScoreRangeByDpt();
 	});
 }
 
 //获奖对比
-function getPrizeCompare() {
-	$.ajax({
-		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getPrizeCompare',
-		data: {
-			sportid: gb.sportid
-		},
-		async: false,
-		dataType: "jsonp",
-		callback: "JsonCallback"
-	}).done(function(obj) {
-		//console.log(6);
-		//$('[name="progress"]').text('60%');
-		//部门间比较信息
-		//gb.userInfo.dptCompare = {};
-		gb.userInfo.dptCompare.prizeCompare = obj;
-		$('[name="prizePrpt"]').text(obj[0].passRatio);
-		get2ndPassedCompare();
+// function getPrizeCompare() {
+// 	$.ajax({
+// 		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/getPrizeCompare',
+// 		data: {
+// 			sportid: gb.sportid
+// 		},
+// 		async: false,
+// 		dataType: "jsonp",
+// 		callback: "JsonCallback"
+// 	}).done(function(obj) {
+// 		//console.log(6);
+// 		//$('[name="progress"]').text('60%');
+// 		//部门间比较信息
+// 		//gb.userInfo.dptCompare = {};
+// 		gb.userInfo.dptCompare.prizeCompare = obj;
+// 		$('[name="prizePrpt"]').text(obj[0].passRatio);
 
-	});
-}
+// 		//get2ndPassedCompare();
+
+// 	});
+// }
 
 //获奖对比
-function get2ndPassedCompare() {
-	$.ajax({
-		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedRatio',
-		data: {
-			sportid: gb.sportid
-		},
-		async: false,
-		dataType: "jsonp",
-		callback: "JsonCallback"
-	}).done(function(obj) {
-		//console.log(7);
-		//$('[name="progress"]').text('70%');
-		$('[name="2ndTimesPrpt"]').text(obj['2ndPassedRatio']);
-		$('[name="1stTime"]').text(obj.moreChance);
+// function get2ndPassedCompare() {
+// 	$.ajax({
+// 		url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedRatio',
+// 		data: {
+// 			sportid: gb.sportid
+// 		},
+// 		async: false,
+// 		dataType: "jsonp",
+// 		callback: "JsonCallback"
+// 	}).done(function(obj) {
+// 		//console.log(7);
+// 		//$('[name="progress"]').text('70%');
+// 		$('[name="2ndTimesPrpt"]').text(obj['2ndPassedRatio']);
+// 		$('[name="1stTime"]').text(obj.moreChance);
 
-		$.ajax({
-			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedCompare',
-			data: {
-				sportid: gb.sportid
-			},
-			async: false,
-			dataType: "jsonp",
-			callback: "JsonCallback"
-		}).done(function(obj) {
-			//gb.userInfo.dptCompare = {};
-			//console.log(8);
-			//$('[name="progress"]').text('80%');
-			gb.userInfo.dptCompare.moreChancePassedCompare = obj;
-			getScoreRangeByDpt();
-		});
+// 		$.ajax({
+// 			url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/get2ndPassedCompare',
+// 			data: {
+// 				sportid: gb.sportid
+// 			},
+// 			async: false,
+// 			dataType: "jsonp",
+// 			callback: "JsonCallback"
+// 		}).done(function(obj) {
+// 			//gb.userInfo.dptCompare = {};
+// 			//console.log(8);
+// 			//$('[name="progress"]').text('80%');
+// 			gb.userInfo.dptCompare.moreChancePassedCompare = obj;
+// 			getScoreRangeByDpt();
+// 		});
 
-	});
-}
+// 	});
+// }
 
 function getScoreRangeByDpt() {
 	$.ajax({
@@ -760,14 +762,14 @@ var initDom = function() {
 			});
 
 			//最后一页隐藏箭头
-			if (index == 6 && (direction == 'down')) {
+			if (index == 7 && (direction == 'down')) {
 				$('.iSlider-arrow').hide();
 			}
 		},
 		afterLoad: function(anchor, index) {
 			handleCounterup($(".section:nth(" + (index - 1) + ")").find(".number"), 500);
 
-			if (index >= 2 && index <= 8) {
+			if (index >= 2 && index <= 7) {
 				gb.myChart[index - 2] = echarts.init(gb.dom[index - 1]);
 				gb.myChart[index - 2].setOption(gb.option[index]);
 			}
@@ -823,7 +825,7 @@ var refreshData = function() {
 			if (gb.userInfo.score == 100) {
 				$('[name="myErr"]').hide();
 			} else {
-				$('[name="myErr"]').attr('href', window.location.href.replace('partyScore', 'myPartyErr'));
+				$('[name="myErr"]').attr('href', window.location.href.replace('score', 'error'));
 			}
 
 

@@ -53,7 +53,6 @@ function submitPaper(data, exam) {
 			data: data,
 			dataType: "jsonp",
 			callback: "JsonCallback",
-			//async:false,//同步
 			success: function(obj) {
 				if (obj.status == 0) {
 					$('[name="sucessInfo"] .weui_msg_title').text('提交失败，请稍后重试');
@@ -71,11 +70,11 @@ function submitPaper(data, exam) {
 					//防止一个人写多条记录
 					//exam.loginData.iTimes = 2;
 				}
-				if (!exam.realMatch && isAllQuestionAnswered(exam)) {
+				if (isAllQuestionAnswered(exam)) {
 					$.fn.fullpage.moveTo(0, exam.lastPage - 1);
 				}
 				/*else {
-					$.fn.fullpage.moveSlideRight();
+					/*$.fn.fullpage.moveSlideRight();
 				}*/
 
 			},
@@ -341,7 +340,9 @@ module.exports = {
 		var curScore = (answerInfo.data('value') + 1 == answerPrnt.data('answer')) ? 1 : 0;
 		var curID = answerPrnt.data('id');
 
-		if (!exam.isAnswered[curID]) {
+		//增加此条件将存在修改答案后分数不变的BUG
+		//if (!exam.isAnswered[curID])
+		{
 			exam.answerList[curID] = curScore;
 			exam.isAnswered[curID] = 1;
 			exam.curID = curID;

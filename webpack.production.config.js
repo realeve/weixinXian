@@ -47,7 +47,7 @@ var webpackConfig = {
 			loader: ExtractTextPlugin.extract('style', 'css')
 		}, {
 			test: /\.json$/,
-			loader: "json"
+			loader: "json-loader"
 		}]
 	},
 	postcss: [
@@ -65,10 +65,11 @@ var webpackConfig = {
 };
 
 for (var key in webpackConfig.entry) {
+	const tplPath = './tpl/';
 	var plugin = new HtmlWebpackPlugin({
 		title: packageInfo.description,
 		minify: minifiyConfig,
-		template: key + '.html',
+		template: tplPath+key + '.html',
 		filename: key + '.html',
 		chunks: [key],
 		hash: false
