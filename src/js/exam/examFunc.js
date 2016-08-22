@@ -216,7 +216,7 @@ function submitData(bCheck, answerNums, exam) {
 	if (!bCheck && data.answer_nums < exam.maxAnswerNum) {
 		data.iTimes = 2;
 	}
-	if (!exam.realMatch || exam.timeLength == 0) {
+	if (exam.timeLength == 0) {
 		$.modal({
 			title: "提示",
 			text: "您确定要交卷吗?",
