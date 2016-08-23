@@ -2,6 +2,16 @@
 require('./vendors/jquery.fullPage.js');
 require('./vendors/jquery-weui.js');
 require('./vendors/fakeLoader.js/fakeLoader.js');
+function initDom() {
+	//此处设置一个较长数值，数据载入完毕后再显示
+	$("#fakeLoader").fakeLoader({
+		timeToHide: 600000, //Time in milliseconds for fakeLoader disappear
+		bgColor: "#d7eefe",
+		spinner: "spinner7"
+	});
+	$('.fl').parent().append('<p class="center" style="position:absolute;width:100%;top:60%;color:#445">载入中...</p>');
+}
+initDom();
 
 var exam = require('./global/config.js');
 var WINDOWTITLE = require('./global/windowtitle.js');
@@ -16,16 +26,6 @@ if (sid != null) {
 }
 	
 var app = function() {
-	function initDom() {
-		//此处设置一个较长数值，数据载入完毕后再显示
-		$("#fakeLoader").fakeLoader({
-			timeToHide: 600000, //Time in milliseconds for fakeLoader disappear
-			bgColor: "#d7eefe",
-			spinner: "spinner7"
-		});
-		$('.fl').parent().append('<p class="center" style="position:absolute;width:100%;top:60%;color:#445">载入中...</p>');
-	}
-
 	var rendPaper = function() {
 
 		$('#fullpage').fullpage({
@@ -167,8 +167,7 @@ var app = function() {
 	});
 	
 	return {
-		init: function() {
-			initDom();
+		init: function() {			
 			initApp();
 		}
 	};

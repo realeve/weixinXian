@@ -263,9 +263,7 @@
     vertical-align: top;
 	height:100%;width:100%;display:block;margin:0 auto;
 }
-.background_welcome{
-    background-image: url('../img/welcome.jpg');
-}
+
 .background_main_error{
     background-image: url('../img/main.jpg');
 }
