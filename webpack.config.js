@@ -26,7 +26,7 @@ const minifiyConfig = {
 var webpackConfig = {
 	entry: {
 		index: "./index.js",
-		employee: "./employee.js",
+		online: "./online.js",
 		error: "./error.js",
 		score: "./score.js"
 	},

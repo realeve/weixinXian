@@ -14,11 +14,11 @@ var exam = {
 	isSubmit: false, //数据是否提交
 	isLogin: false, //是否登录
 	loginData: {}, //用户登录信息
-	maxAnswerNum: 30, //最大抽取多少道题目
+	maxAnswerNum: 25, //最大抽取多少道题目
 	answerTimes: 0, //每个用户最多回答几次
 	examPaper: "cost", //试卷文件
 	sportDate: "8月30日",
-	sportid: SPORT.XIAN_LEADER,
+	sportid: SPORT.XIAN,
 	editAnswer: false, //允许修改答案
 	curID: 0, //当前答题数
 	realMatch: true, //实时提交分数，用于比赛中用户成绩获取

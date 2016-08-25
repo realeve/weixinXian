@@ -372,26 +372,22 @@ module.exports = {
 	getUserInfo: function(exam) {
 		var data = {
 			user_name: $('[name="userName"]').val().trim(),
-			user_id: $('[name="userCard"]').val().trim(),
 			user_dpt: $('[name="user_dpt"]').val(),
 			sportid: exam.sportid
 		};
-		data.user_firstname = data.user_name.substr(0, 1);
 
 		if (!validate(data)) {
 			$.toast("请输入个人用户信息", "cancel");
 		} else {
 			$.ajax({
-				url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/examSafeLogin',
+				url: '//cbpc540.applinzi.com/index.php?s=/addon/GoodVoice/GoodVoice/examLoginXian',
 				data: data,
 				dataType: "jsonp",
 				callback: "JsonCallback",
 				success: function(obj) {
 					//var obj = loginData[0];
 					if (obj.id == 0) { //查无此人
-						$.alert("登录失败，请检查您的卡号及部门", "警告！");
-					} else if (obj.first_name.trim() != data.user_firstname) {
-						$.alert("登录失败，您的姓名可能填写错误", "警告！");
+						$.alert("登录失败，请检查您的个人信息", "警告！");
 					} else { //登录成功
 
 						//存储用户信息

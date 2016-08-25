@@ -19,7 +19,7 @@ function initDom() {
 	$('[name="sucessInfo"] .weui_msg_title').hide();
 	$('[name="sportDate"]').text(exam.sportDate);
 
-	var dpt = require('./config/department.json');
+	var dpt = require('./config/dpt_xian.json');
 
 	var dptLen = dpt.length,
 		dptName = [];
@@ -28,7 +28,7 @@ function initDom() {
 	});
 
 	$('[name="user_dpt"]').select({
-		title: "请选择您的部门",
+		title: "请选择您的单位",
 		items: dptName
 	});
 }
@@ -73,7 +73,7 @@ var app = function() {
 	};
 
 	function getPaper() {
-		var question = require('./config/xian_leader.json');
+		var question = require('./config/xian.json');
 		var quesLen = question.length;
 
 		//管三活动，仅前200道题目参与问答
