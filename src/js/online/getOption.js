@@ -1,4 +1,5 @@
 var echarts = require('../vendors/echarts.common.js');
+var gb = require("./globalData.js");
 
 module.exports = function() {
 	var bgPatternImg = new Image();
@@ -223,7 +224,7 @@ module.exports = function() {
 		backgroundColor: 'rgb(42,47,71)', //bg,//
 		title: [{
 				top: 20,
-				text: '商洛市反假货币宣传知识竞赛',
+				text: gb.title + '反假货币宣传知识竞赛',
 				subtext: '当前已连接人数：0',
 				textStyle: {
 					color: '#eee',

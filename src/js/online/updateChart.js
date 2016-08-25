@@ -5,7 +5,7 @@ function handleBarData(obj, gb, i) {
 	};
 
 	obj.map(function(userInfo, i) {
-		scoreOrder.yAxis[i] = userInfo.name; //+ ' (' + userInfo.iTimes + ') ';
+		scoreOrder.yAxis[i] = userInfo.name + ' (' + userInfo.user_dpt + ') ';
 		scoreOrder.xAxis[i] = userInfo.value;
 
 	});

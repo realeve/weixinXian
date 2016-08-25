@@ -12,6 +12,9 @@ var SPORT = {
 
 var sportid = getUrlParam('sid');
 var perScore = getUrlParam('score');
+var cht_title = getUrlParam('city');
+cht_title = (cht_title == null) ? '商洛市' : decodeURI(cht_title);
+
 var gb = {
 	//bgmid:2,
 	windowTitle: '',
@@ -25,6 +28,7 @@ var gb = {
 		primary: "#556fb5",
 		primaryLight: "#889acb"
 	},
+	title: cht_title,
 	option: {},
 	myChart: [],
 	dom: [],
