@@ -70,12 +70,13 @@ function submitPaper(data, exam) {
 					//防止一个人写多条记录
 					//exam.loginData.iTimes = 2;
 				}
-				if (isAllQuestionAnswered(exam)) {
-					$.fn.fullpage.moveTo(0, exam.lastPage - 1);
-				}
-				/*else {
-					/*$.fn.fullpage.moveSlideRight();
-				}*/
+
+				// if (isAllQuestionAnswered(exam)) {
+				// 	$.fn.fullpage.moveTo(0, exam.lastPage - 1);
+				// }
+
+				//$.fn.fullpage.moveSlideRight();
+
 
 			},
 			error: function(obj) {
@@ -90,6 +91,10 @@ function submitPaper(data, exam) {
 				$('#submit').hide();
 			}
 		});
+
+		// if (isAllQuestionAnswered(exam)) {
+		// 	$.fn.fullpage.moveTo(0, exam.lastPage - 1);
+		// }
 }
 
 function isAllQuestionAnswered(exam) {
@@ -353,7 +358,7 @@ module.exports = {
 
 				//未到最后一题
 				//
-				if (curID < exam.maxAnswerNum - 1) {
+				if (curID <= exam.maxAnswerNum - 1) {
 					//如果当前答对，并且在实时比赛模式才提交分数
 					if ( /*curScore && */ exam.realMatch) {
 						//直接提交当前数据，不需审核

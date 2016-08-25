@@ -4,7 +4,7 @@ require('./vendors/jquery-weui.js');
 //var $ = require('jquery');
 require('./vendors/g2/effective.js');
 require('./vendors/fakeLoader.js/fakeLoader.js');
-var exam = require('./global/config.js');
+var exam = require('./global/config2.js');
 
 function initDom() {
 	//此处设置一个较长数值，数据载入完毕后再显示

@@ -14,7 +14,7 @@ var exam = {
 	isSubmit: false, //数据是否提交
 	isLogin: false, //是否登录
 	loginData: {}, //用户登录信息
-	maxAnswerNum: 100, //最大抽取多少道题目
+	maxAnswerNum: 200, //最大抽取多少道题目
 	answerTimes: 0, //每个用户最多回答几次
 	examPaper: "cost", //试卷文件
 	sportDate: "8月30日",
