@@ -7,7 +7,7 @@ function getUrlParam(name) {
 	return null; //返回参数值
 }
 
-var answerNum = getUrlParam('num');
+var num = getUrlParam('num');
 num = (num == null) ? 50 : num;
 
 var exam = {
