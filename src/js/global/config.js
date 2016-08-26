@@ -8,7 +8,7 @@ function getUrlParam(name) {
 }
 
 var num = getUrlParam('num');
-num = (num == null) ? 50 : num;
+num = (num == null) ? 50 : Number.parseInt(num);
 
 var exam = {
 	loadComplete: false,
