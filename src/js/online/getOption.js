@@ -142,7 +142,7 @@ module.exports = function() {
 			splitLine: {
 				show: false
 			},
-			max: 200,
+			max: i == 0 ? gb.max1 : gb.max2,
 			min: 0,
 			show: false
 		});
@@ -224,7 +224,7 @@ module.exports = function() {
 		backgroundColor: 'rgb(42,47,71)', //bg,//
 		title: [{
 				top: 20,
-				text: gb.title + '反假货币宣传知识竞赛',
+				text: gb.title,
 				subtext: '当前已连接人数：0',
 				textStyle: {
 					color: '#eee',

@@ -2,6 +2,7 @@
 require('./vendors/jquery.fullPage.js');
 require('./vendors/jquery-weui.js');
 require('./vendors/fakeLoader.js/fakeLoader.js');
+
 function initDom() {
 	//此处设置一个较长数值，数据载入完毕后再显示
 	$("#fakeLoader").fakeLoader({
@@ -24,7 +25,7 @@ if (sid != null) {
 	exam.examPaper = PAPER[sid];
 	document.title = WINDOWTITLE[sid];
 }
-	
+
 var app = function() {
 	var rendPaper = function() {
 
@@ -63,7 +64,7 @@ var app = function() {
 	};
 
 	function getPaper() {
-		var question = require('./config/'+exam.examPaper+'.json');
+		var question = require('./config/' + exam.examPaper + '.json');
 		var quesLen = question.length;
 
 		//只抽取maxAnswerNum个
@@ -109,8 +110,8 @@ var app = function() {
 		document.getElementById('autoplay').play();
 		rendPaper();
 	}
-	
-	function initApp(){			
+
+	function initApp() {
 		if (uid == -1) {
 			getPaper();
 		} else {
@@ -141,7 +142,7 @@ var app = function() {
 			});
 		}
 	}
-	
+
 	$('#fullpage').on('click', '[name="hidethis"]', function() {
 		/* Act on the event */
 		//载入数据
@@ -165,9 +166,9 @@ var app = function() {
 		localStorage.removeItem(key);
 		window.location.href = window.location.href;
 	});
-	
+
 	return {
-		init: function() {			
+		init: function() {
 			initApp();
 		}
 	};

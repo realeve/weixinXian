@@ -2,6 +2,12 @@ function jsRight(sr, rightn) {
 	return sr.substring(sr.length - rightn, sr.length);
 }
 
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = encodeURI(window.location.search).substr(1).match(reg); //匹配目标参数
+	if (r !== null) return decodeURI(r[2]);
+	return null; //返回参数值
+}
 //数组随机排序
 function randomsort(a, b) {
 	return Math.random() > 0.5 ? -1 : 1;
@@ -92,9 +98,9 @@ function submitPaper(data, exam) {
 			}
 		});
 
-		// if (isAllQuestionAnswered(exam)) {
-		// 	$.fn.fullpage.moveTo(0, exam.lastPage - 1);
-		// }
+	// if (isAllQuestionAnswered(exam)) {
+	// 	$.fn.fullpage.moveTo(0, exam.lastPage - 1);
+	// }
 }
 
 function isAllQuestionAnswered(exam) {
@@ -375,10 +381,15 @@ module.exports = {
 		return exam;
 	},
 	getUserInfo: function(exam) {
+		var type = getUrlParam('type');
+		if (type == null) {
+			type = 0;
+		}
 		var data = {
 			user_name: $('[name="userName"]').val().trim(),
 			user_dpt: $('[name="user_dpt"]').val(),
-			sportid: exam.sportid
+			sportid: exam.sportid,
+			type: type
 		};
 
 		if (!validate(data)) {
@@ -464,5 +475,6 @@ module.exports = {
 			}
 		}
 		return exam;
-	}
+	},
+	getUrlParam: getUrlParam
 };

@@ -6,6 +6,14 @@ require('./vendors/g2/effective.js');
 require('./vendors/fakeLoader.js/fakeLoader.js');
 var exam = require('./global/config.js');
 
+var util = require('./exam/examFunc.js');
+
+var examType = util.getUrlParam('type');
+if (examType == null) {
+	examType = 0;
+}
+examType = parseInt(examType);
+
 function initDom() {
 	//此处设置一个较长数值，数据载入完毕后再显示
 	$("#fakeLoader").fakeLoader({
@@ -19,7 +27,10 @@ function initDom() {
 	$('[name="sucessInfo"] .weui_msg_title').hide();
 	$('[name="sportDate"]').text(exam.sportDate);
 
-	var dpt = require('./config/dpt_xian.json');
+
+	var dptList = ['dpt_xian', 'code'];
+
+	var dpt = require('./config/' + dptList[examType] + '.json');
 
 	var dptLen = dpt.length,
 		dptName = [];
@@ -34,8 +45,6 @@ function initDom() {
 }
 
 initDom();
-
-var util = require('./exam/examFunc.js');
 
 var app = function() {
 
@@ -73,7 +82,10 @@ var app = function() {
 	};
 
 	function getPaper() {
-		var question = require('./config/xian.json');
+
+		var pprList = ['xian', 'party3'];
+
+		var question = require('./config/' + pprList[examType] + '.json');
 		var quesLen = question.length;
 
 		//管三活动，仅前200道题目参与问答
