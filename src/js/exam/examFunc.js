@@ -351,6 +351,10 @@ module.exports = {
 		var curScore = (answerInfo.data('value') + 1 == answerPrnt.data('answer')) ? 1 : 0;
 		var curID = answerPrnt.data('id');
 
+		// if (exam.isAnswered[curID]) {
+		// 	return;
+		// }
+
 		//增加此条件将存在修改答案后分数不变的BUG
 		//if (!exam.isAnswered[curID])
 		{
